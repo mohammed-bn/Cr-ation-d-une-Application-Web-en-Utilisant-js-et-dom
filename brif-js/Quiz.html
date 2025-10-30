@@ -7,35 +7,39 @@
     <link rel="stylesheet" href="Quiz.css">
 </head>
 <body>
-    <header>
-        <div>
-            <h1>Test Javascript</h1>
-        </div>
-    </header>
-    <section class="global">
-        <h2 id="titre">Question</h2>
-        <progress min="1" max="5" value="5"></progress>
-            <div class="question">
-                <h3>Question???</h3>
-                <div>
-                    <div>
-                        <input id="a" name="choice" type="radio"/>
-                        <label for="a">a</label>
-                    </div>
-                    <div>
-                        <input id="a" name="choice" type="radio"/>
-                        <label for="a">b</label>
-                    </div>
-                    <div>
-                        <input id="a" name="choice" type="radio"/>
-                        <label for="a">c</label>
+
+    <main>
+        <section class="global">
+            <h2 id="titre">Question</h2>
+            <!-- <progress min="1" max="5" value="1"></progress> -->
+             <div class="progress-bar">
+                <div class="progress"></div>
+             </div>
+                <div class="question">
+                    <h3>C'est quoi javascript?</h3>
+                    <div class="list-choix">
+                        <div class="choix">
+                            <input id="a" name="choice" type="radio"/>
+                            <label for="a">markup langage</label>
+                        </div>
+                        <div class="choix">
+                            <input id="a" name="choice" type="radio"/>
+                            <label for="a">outile de disign</label>
+                        </div>
+                        <div class="choix">
+                            <input id="a" name="choice" type="radio"/>
+                            <label for="a">langage de programation</label>
+                        </div>  
+                        <div class="choix">
+                            <input id="a" name="choice" type="radio"/>
+                            <label for="a">fremwork java</label>
+                        </div>
                     </div>  
-                    <div>
-                        <input id="a" name="choice" type="radio"/>
-                        <label for="a">d</label>
+                    <div class="button">
+                        <button type="submit">submit</button>
                     </div>
-                </div>   
-            </div>
-    </section>   
+                </div>
+        </section>  
+    </main> 
 </body>
 </html>
