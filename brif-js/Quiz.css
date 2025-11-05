@@ -1,25 +1,29 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-header{
+
+header {
     display: flex;
     justify-content: center;
     background-image: url(background.png);
 }
-#titre{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+#titre {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #37e1a0;
     font-size: 400%;
 }
-main{
+
+main {
     background-image: url(background.png);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.global{
+
+.global {
     background-color: rgb(237, 214, 179);
     border-radius: 12%;
     display: flex;
@@ -30,28 +34,25 @@ main{
     width: 80vh;
     justify-self: center;
     border: 3px solid #37e1a0;
-    gap: 20px;
+    gap: 2vh;
 }
 
-/* progress{
-    width: 80%;
-    height: 5%;
-    background-color:blueviolet;
-} */
 
-.progress-bar{
-    width: 200px;
-    height: 20px;
+.progress-bar {
+    width: 50vh;
+    height: 3vh;
     border: 2px solid white;
+    border-radius: 12px;
 }
 
-.progress{
-    background-color:  #37e1a0;
-    width: 20%;
-    height: 20px;
+.progress {
+    background-color: #37e1a0;
+    width: 0vh;
+    height: 3vh;
+    border-radius: 12px;
 }
 
-.question{
+.Question {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,30 +60,35 @@ main{
     height: 50vh;
     width: 60vh;
     font-size: 100%;
-    border:  #37e1a0 solid;
+    border: #25c993 solid;
     border-radius: 12%;
-    gap: 29px;
-    
+    gap: 12%;
 }
-input{
+
+input {
     height: 100%;
     font-size: 200%;
 }
 
-.choix{
+.choix {
     background-color: #37e1a0;
     height: 5vh;
     display: flex;
     border-radius: 12%;
     justify-content: center;
 }
+
 .list-choix {
     display: flex;
     flex-direction: column;
-    gap:15px;
+    gap: 15px;
 }
 
-button{
+label {
+    cursor: pointer;
+}
+
+button {
     justify-self: center;
     background-color: #37e1a0;
     border: none;
@@ -90,7 +96,55 @@ button{
     width: 20vh;
     border-radius: 40%;
 }
-button:hover{
-    border: 6px solid  #37e1a0; 
+
+#submit {
+    display: none;
 }
 
+.next_prec {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+button:hover {
+    border: 6px solid #37e1a0;
+}
+
+.aff_scor {
+    border: 4px #37e1a0 solid;
+    background-color: rgb(237, 214, 179);
+    border-radius: 50%;
+    height: 20vh;
+    width: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+@media (max-width :400px) {
+    .Question {
+        border-style: none;
+        width: 60%;
+    }
+
+    .global {
+        width: 50vh;
+    }
+
+    .progress-bar {
+        width: 80%;
+    }
+
+    main {
+        flex-wrap: wrap-reverse;
+    }
+    .aff_scor{
+        display: none;
+        position: absolute;
+        top: 16px;
+        width: 140px;
+        height: 58px;
+    }
+}

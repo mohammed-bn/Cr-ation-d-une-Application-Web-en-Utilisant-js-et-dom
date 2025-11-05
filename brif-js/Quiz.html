@@ -11,35 +11,50 @@
     <main>
         <section class="global">
             <h2 id="titre">Question</h2>
-            <!-- <progress min="1" max="5" value="1"></progress> -->
              <div class="progress-bar">
                 <div class="progress"></div>
              </div>
-                <div class="question">
-                    <h3>C'est quoi javascript?</h3>
+                <div class="Question">
+                    <h3 id="question">C'est quoi javascript?</h3>
                     <div class="list-choix">
                         <div class="choix">
-                            <input id="a" name="choice" type="radio"/>
-                            <label for="a">markup langage</label>
+                            <input class="input-radio" name="choice" type="radio" value="A"/>
+                            <label for="a" class="repons">markup langage</label>
                         </div>
                         <div class="choix">
-                            <input id="a" name="choice" type="radio"/>
-                            <label for="a">outile de disign</label>
+                            <input class="input-radio" name="choice" type="radio" value="B"/>
+                            <label for="a" class="repons">outile de disign</label>
                         </div>
                         <div class="choix">
-                            <input id="a" name="choice" type="radio"/>
-                            <label for="a">langage de programation</label>
+                            <input class="input-radio" name="choice" type="radio" value="C"/>
+                            <label for="a" class="repons">langage de programation</label>
                         </div>  
                         <div class="choix">
-                            <input id="a" name="choice" type="radio"/>
-                            <label for="a">fremwork java</label>
+                            <input class="input-radio" name="choice" type="radio" value="D"/>
+                            <label for="a" class="repons">fremwork java</label>
                         </div>
                     </div>  
-                    <div class="button">
-                        <button type="submit">submit</button>
-                    </div>
+                    
                 </div>
+                <div class="next_prec">
+                    <div class="button" id="prec">
+                            <button type="submit" onclick="preceQuestion()">prece</button>
+                        </div>
+
+                        <div class="button" id="submit">
+                        <button type="submit" onclick="nextQuestion()">submit</button>
+                        </div>
+
+                        <div class="button" id="next" >
+                            <button type="submit" onclick="nextQuestion()">next</button>
+                        </div>
+                    </div>
         </section>  
+        <div class="aff_scor">
+                <p>votre score</p>
+                <p id="pronsontage">100%</p>
+        </div>
     </main> 
+    <script src="Quis.js"></script>
 </body>
 </html>
